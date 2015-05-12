@@ -1,4 +1,4 @@
-package com.db.dao;
+package com.db.settings;
 
 import java.io.InputStream;
 
@@ -12,7 +12,7 @@ public class MybatisConnector {
 		private static SqlSessionFactory sqlSessionFactory;
 		static	{	
 			try{
-				String resource = "com/db/settings/MybatisConfig.xml";
+				String resource = "com/db/settings/MybatisSettings.xml";
 				InputStream inputStream = Resources.getResourceAsStream(resource);
 				
 				if(sqlSessionFactory ==null){
