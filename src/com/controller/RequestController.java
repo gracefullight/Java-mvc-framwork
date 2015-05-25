@@ -8,13 +8,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 /**
-<<<<<<< HEAD
- * ÔøΩÔøΩ√ªÔøΩÔøΩ ÔøΩÔøΩ∆ºÔøΩ ÔøΩ–∑ÔøΩÔøΩ—¥ÔøΩ.
-=======
- * ø‰√ª¿ª ¿‚æ∆º≠ ∫–∑˘«—¥Ÿ.
->>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58
+ * Ïõπ ÏöîÏ≤≠ Í¥ÄÎ¶¨ ÌÅ¥ÎûòÏä§
  * @author EK
+ *
  */
 public abstract class RequestController extends HttpServlet implements ResultController{
 	
@@ -29,7 +27,6 @@ public abstract class RequestController extends HttpServlet implements ResultCon
 	public void reqProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
 		String resultView = "";
 		try{
-<<<<<<< HEAD
 			// ÏöîÏ≤≠Îêú ÏÑúÎ∏îÎ¶øÏùò ÌÅ¥ÎûòÏä§ Î™ÖÏùÑ Î∞õÏïÑÏò®Îã§.
 			Class c = Class.forName(super.getServletName());
 			// Í∑∏ ÌÅ¥ÎûòÏä§Î°ú ResultController ÌÅ¥ÎûòÏä§Ïùò Í∞ùÏ≤¥Î•º ÎèôÏ†ÅÏúºÎ°ú ÏÉùÏÑ±
@@ -40,29 +37,13 @@ public abstract class RequestController extends HttpServlet implements ResultCon
 				resultView = servlet.result(req, res);
 			}else{
 				// Ïò§Î•òÏãú
-=======
-			// ø‰√ªµ» ≈¨∑°Ω∫¿« ∞Ê∑Œ∏¶ ∏≈∞≥∫Øºˆ∑Œ πﬁæ∆ ≈¨∑°Ω∫ ∞¥√º ª˝º∫
-			Class c = Class.forName(super.getServletName());
-			// ≈¨∑°Ω∫∑Œ inteface ∞¥√º∏¶ µø¿˚¿∏∑Œ ª˝º∫
-			ResultController servlet = (ResultController) c.newInstance();
-		
-			if(servlet != null){
-				// ∞·∞˙»≠∏È¿ª Ω…æÓ¡ÿ¥Ÿ.
-				resultView = servlet.result(req, res);
-			}else{
-				// Ω«∆–Ω√ URL µπˆ±ÎøÎ
->>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58
 				System.out.println(req.getServletPath());
 			}
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 		
-<<<<<<< HEAD
 		// Ïò§Î≤ÑÎ°úÎî© Îêú Result Î©îÏÜåÎìúÏùò Í≤∞Í≥º ÌéòÏù¥ÏßÄÎ•º Dispatcher Ìï¥Ï§ÄÎã§.
-=======
-		// ø‰√ªµ» ≈¨∑°Ω∫¿« Overloadµ» Result «‘ºˆø°º≠ π›»Ø∞™¿Ã ¿÷¿ª ∞ÊøÏ ∆‰¿Ã¡ˆ ∆˜øˆµ˘
->>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58
 		if(resultView!=null){
 			RequestDispatcher rd = req.getRequestDispatcher(resultView);
 			rd.forward(req, res);

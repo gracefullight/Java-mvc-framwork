@@ -21,10 +21,6 @@
 			</tr>
 	</c:forEach>
 </table>
-<<<<<<< HEAD
 <hr>
-<%-- 유저 1의 비밀번호 : ${pass }--%>
-=======
->>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58
 </body>
 </html>
