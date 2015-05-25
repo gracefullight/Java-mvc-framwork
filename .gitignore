@@ -1,6 +1,12 @@
 *.class
+<<<<<<< HEAD
 /build/*
 /.settings/*
 /.settings
 /build
 *.log
+=======
+build/
+.settings/
+[Bb]uild/
+>>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58

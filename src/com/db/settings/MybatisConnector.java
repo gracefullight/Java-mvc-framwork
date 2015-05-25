@@ -13,7 +13,10 @@ public class MybatisConnector {
 		static	{	
 			try{
 				String resource = "com/db/settings/MybatisSettings.xml";
+<<<<<<< HEAD
 				
+=======
+>>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58
 				InputStream inputStream = Resources.getResourceAsStream(resource);
 				
 				if(sqlSessionFactory ==null){
