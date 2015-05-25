@@ -1,0 +1,28 @@
+encode type ms949
+test project > properties > text file encoding > utf-8, ms949
+
+DB구조는 
+user table
+1. idx  integer PK NotNULL AutoIncrement
+2. userid varchar(45) NotNULL
+3. passwd varchar(100) NotNULL
+
+index.jsp
+- 링크클릭
+
+com.servlet.test 의 testAction으로 이동
+배열을 생성하고
+
+com.db.dao의 testDao 클래스의 getUserList() 메소드에 접근한다.
+
+getUserList() 메소드에서 DB와 연결을 하기 위한 Session을 생성해준다.
+
+session.selectList 메소드는 com.db.mappers 의 test_SQL.xml 속 selectUser 란 id를 가진 쿼리를 실행한다.
+
+finally 에서 DB연결한 Session을 닫아준다.
+
+List 를 반환한다.
+
+다시 testAction에서 request.setAttribute를 통해 반환한 List를 담아준다.
+
+test.jsp에서 ${list}로 해당 Attribute를 받아 user라고 명명하고 for문을 돌린다.

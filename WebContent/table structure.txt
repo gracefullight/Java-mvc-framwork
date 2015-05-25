@@ -1,0 +1,30 @@
+0517ver
+
+device 테이블
+-idx : 인덱스
+-MacAddress : 맥주소
+-ShopCode : 가게인덱스
+-EnrollTime : 기기 등록 시간
+-ConfirmTime : 확인 시간
+-Status : 상태 0은 입장 1은 대기 -1은 지남?
+
+shop 테이블
+-idx : 인덱스
+-Name : 가게명
+-Address : 가게 주소
+-Content : 가게 설명
+-RequiredTime : 소요 시간
+-NetAddress : 가게 wifi 주소
+
+user 테이블
+-idx : 인덱스
+-Name : 유저명
+-Password : 비밀번호
+-Gender : 성별
+-Birth : 생년월일
+-PhoneNumber : 폰번호
+-Grade : 유저 권한
+-ShopCode : 가게 관리용 가게인덱스 
+-bookmark1 : 즐겨찾기 가게인덱스1
+-bookmark2
+-bookmark3
