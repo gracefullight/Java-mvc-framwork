@@ -5,12 +5,8 @@
  
 <configuration>
 	<typeAliases>
-<<<<<<< HEAD
           <typeAlias alias="TestBean" type="com.db.bean.TestBean"/>
           <typeAlias alias="DeviceBean" type="com.db.bean.DeviceBean"/>        
-=======
-          <typeAlias alias="UserBean" type="com.db.bean.UserBean"/>    
->>>>>>> bcd932d7b231f155ef36c372234bf32dabbb4c58
     </typeAliases> 
  
     <environments default="development">
